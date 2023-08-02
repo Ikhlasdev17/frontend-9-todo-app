@@ -7,6 +7,11 @@
   <title>Todo project</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </head>
 
 <body>
@@ -18,9 +23,9 @@
 
       <div id="auth-content">
         <form class='active' id='register-form'>
-          <input id='register-phone' type='tel' placeholder='Phone number' />
-          <input id='register-name' type='text' placeholder='Username' />
-          <input id='register-password' type='password' placeholder='Password' />
+          <input required id='register-phone' type='tel' placeholder='Phone number' />
+          <input required id='register-name' type='text' placeholder='Username' />
+          <input required id='register-password' type='password' placeholder='Password' />
           <button class='btn'>Register</button>
 
           <span class='auth-changer' id='change-to-login'>Already have an account? (Sign in)</span>

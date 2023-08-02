@@ -121,6 +121,14 @@ body {
 	background-color: #006769 !important;
 }
 
+.wrapper-item {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	#wrapper {
 		min-height: 100vh;

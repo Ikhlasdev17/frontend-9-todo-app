@@ -15,3 +15,115 @@ ul {
 img {
 	max-width: 100%;
 }
+
+body {
+	min-height: 100vh;
+	background: url('../images/wallpaper.jpeg');
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	padding: 8px 16px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	border-radius: 4px;
+	background-color: #006769;
+	color: white;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #005254;
+}
+
+.btn:active {
+	opacity: 0.7;
+}
+
+.btn:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+#wrapper {
+	padding: 25px;
+	backdrop-filter: blur(6px) saturate(200%);
+	-webkit-backdrop-filter: blur(6px) saturate(200%);
+	background-color: rgba(17, 25, 40, 0.48);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	margin: 100px 0;
+	width: 600px;
+}
+
+#wrapper #auth h1 {
+	color: white;
+	font-size: 22px;
+}
+
+#wrapper #auth h2 {
+	font-size: 18px;
+	color: #adadad;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+#auth-content form {
+	display: none;
+}
+
+#auth-content form.active {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0;
+	gap: 20px;
+}
+
+#auth-content form input {
+	padding: 8px 16px;
+	background-color: rgba(255, 255, 255, 0.125);
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	font-size: 18px;
+	color: white;
+}
+
+.auth-changer {
+	color: #adadad;
+	font-weight: bolder;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#wrapper {
+		min-height: 100vh;
+		margin: 0;
+		border-radius: 0;
+
+		#auth {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 100vh;
+			#auth-content {
+				width: 100%;
+			}
+		}
+	}
+}

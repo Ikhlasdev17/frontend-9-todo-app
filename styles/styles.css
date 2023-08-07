@@ -126,6 +126,54 @@ body {
   display: block;
 }
 
+.task-item {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: medium;
+  font-size: 20px;
+}
+.task-item.completed {
+  opacity: 0.3;
+}
+
+.item-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item-btns input {
+  width: 20px;
+  height: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+.form input,
+.form select {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #444;
+  font-size: 16px;
+  background-color: white;
+}
+.form input {
+  width: auto;
+}
+.form select {
+  flex: 2;
+}
+
 @media screen and (max-width: 500px) {
   #wrapper {
     min-height: 100vh;
@@ -133,7 +181,6 @@ body {
     border-radius: 0;
   }
   #wrapper #auth {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;

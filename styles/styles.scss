@@ -129,6 +129,58 @@ body {
 	}
 }
 
+.task-item {
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: medium;
+	font-size: 20px;
+
+	&.completed {
+		opacity: 0.3;
+	}
+}
+
+.item-btns {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	input {
+		width: 20px;
+		height: 20px;
+	}
+}
+.form {
+	width: 100%;
+	display: flex;
+	margin-bottom: 30px;
+	gap: 20px;
+
+	input,
+	select {
+		padding: 8px 10px;
+		background-color: transparent;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		color: #444;
+		font-size: 16px;
+		background-color: white;
+	}
+
+	input {
+		width: auto;
+	}
+
+	select {
+		flex: 2;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	#wrapper {
 		min-height: 100vh;
@@ -136,7 +188,6 @@ body {
 		border-radius: 0;
 
 		#auth {
-			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
